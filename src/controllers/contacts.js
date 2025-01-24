@@ -3,7 +3,6 @@ import createHttpError from "http-errors";
 import { parsePaginationParams } from "../utils/parsePaginationParams.js";
 import { parseSortParams } from "../utils/parseSortParams.js";
 import { saveFileToCloudinary } from "../utils/saveFileToCloudinary.js";
-import { getEnvVar } from "../utils/getEnvVar.js";
 
 export const getContactsController = async (req, res) => {
   const { page, perPage } = parsePaginationParams(req.query);
